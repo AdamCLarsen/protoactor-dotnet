@@ -145,7 +145,7 @@ public class KubernetesProvider : IClusterProvider
         {
             throw new ApplicationException($"Unable to get own pod information for {_podName}");
         }
-
+        
         Logger.LogInformation("[Cluster][KubernetesProvider] Using Kubernetes namespace: {Namespace}", pod.Namespace());
 
         Logger.LogInformation("[Cluster][KubernetesProvider] Using Kubernetes port: {Port}", _port);
