@@ -281,7 +281,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClusterK8sGrains", "ClusterK8sGrains", "{ADE7A14E-FFE9-4137-AC25-E2F2A82B0A8C}"
 	ProjectSection(SolutionItems) = preProject
 		examples\ClusterK8sGrains\readme.md = examples\ClusterK8sGrains\readme.md
-		examples\ClusterK8sGrains\build-images.cmd = examples\ClusterK8sGrains\build-images.cmd
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "examples\ClusterK8sGrains\Messages\Messages.csproj", "{44B8EBA7-5A47-4D20-B62F-48413B676473}"
@@ -301,7 +300,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "template", "template", "{08
 		examples\ClusterK8sGrains\chart\templates\namespace.yaml = examples\ClusterK8sGrains\chart\templates\namespace.yaml
 		examples\ClusterK8sGrains\chart\templates\node1-deployment.yaml = examples\ClusterK8sGrains\chart\templates\node1-deployment.yaml
 		examples\ClusterK8sGrains\chart\templates\node2-deployment.yaml = examples\ClusterK8sGrains\chart\templates\node2-deployment.yaml
-		examples\ClusterK8sGrains\chart\templates\protoactor-k8s-cluster-port-service.yaml = examples\ClusterK8sGrains\chart\templates\protoactor-k8s-cluster-port-service.yaml
 		examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-role.yaml = examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-role.yaml
 		examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-rolebinding.yaml = examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-rolebinding.yaml
 		examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-serviceaccount.yaml = examples\ClusterK8sGrains\chart\templates\protoactor-k8s-grains-serviceaccount.yaml
