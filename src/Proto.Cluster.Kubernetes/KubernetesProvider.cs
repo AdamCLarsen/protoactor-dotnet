@@ -154,7 +154,8 @@ public class KubernetesProvider : IClusterProvider
         {
             [LabelCluster] = _clusterName,
             [LabelPort] = _port.ToString(),
-            [LabelMemberId] = _cluster.System.Id
+            [LabelMemberId] = _cluster.System.Id,
+            [LabelHost] = _host
         };
 
         foreach (var existing in pod.Metadata.Labels)

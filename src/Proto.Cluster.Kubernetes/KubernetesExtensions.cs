@@ -75,8 +75,11 @@ internal static class KubernetesExtensions
             .Where(l => l.Key.StartsWith(AnnotationKinds))
             .SelectMany(l => l.Value.Split(';'))
             .ToArray();
-
+        
         var host = pod.Status.PodIP ?? "";
+        if(pod.Metadata.Labels.TryGetValue(LabelHost, out var hostOverride))
+            host = hostOverride;
+        
         var port = Convert.ToInt32(pod.Metadata.Labels[LabelPort]);
         var mid = pod.Metadata.Labels[LabelMemberId];
         var alive = pod.Status.ContainerStatuses.All(x => x.Ready);

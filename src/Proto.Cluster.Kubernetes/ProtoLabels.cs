@@ -13,4 +13,5 @@ public static class ProtoLabels
     public const string LabelCluster = ProtoClusterPrefix + "cluster";
     public const string LabelMemberId = ProtoClusterPrefix + "member-id";
     public const string AnnotationKinds = ProtoClusterPrefix + "kinds";
+    public const string LabelHost = ProtoClusterPrefix + "host";
 }
